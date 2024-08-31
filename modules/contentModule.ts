@@ -14,3 +14,7 @@ export const getContents = (): Content[] => {
 export const getContentById = (id: number): Content | undefined => {
   return content.find(item => item.id === id) as Content | undefined;
 };
+
+export const getContentByTitle = (title: string): Content | undefined => {
+  return content.find(item => item.title === title) as Content | undefined;
+}
